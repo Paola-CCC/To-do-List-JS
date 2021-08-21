@@ -28,14 +28,15 @@ p {
 
 /* Titre  */
 #titre{
-    text-align: center;
-  
+    text-align: center; 
 }
 
 
 h1{
     font-family: 'Abril Fatface', serif;
     background-color: rgb(203, 230, 203);
+    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
+    border-radius: 50px;
     height: 60px;
 }
 
@@ -47,21 +48,21 @@ h1{
     height: 600px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
 }
 
 
 
 
 .list{
-    background-color: rgb(66, 203, 203);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     height: 50px;
     margin: 3px;
-    margin-right: 50px;
-    
-    
+    margin-right: 50px;    
 }
 
 button{
@@ -71,11 +72,10 @@ button{
 }
 
 ul{
-    /* background-color: aquamarine; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+     
 }
 
 
@@ -103,9 +103,11 @@ ul{
 /* Partie Ajouter une tâches */
 
 #new-task{
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: rgb(203, 230, 203);
+    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
     height: 100px;
+    border-radius: 20px;
 }
 
 
@@ -123,12 +125,14 @@ label{
 #task{
     width: 520px;
     margin-left: 5px;
+    
 }
 
 #submit{
     width: 95px;
     margin-left: 3px;
     margin-right: 5px;
+   
 }
 
 
