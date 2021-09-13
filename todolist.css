@@ -1,15 +1,20 @@
 body{
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(100deg, rgb(89, 89, 201), pink);
+    background-size: 100%;
+
 }
 
 
 main{
-    height: 1050px;
-    background-color: rgb(78, 78, 78); ;
     display: flex;
     justify-content: center;
 }
+
+
+    
+
 
 p {
     margin-left: 5px;
@@ -19,9 +24,8 @@ p {
 
 
 .container{ 
-    width: 650px;
-    height: 800px;
-    /* background-color: rgb(77, 32, 32);  */
+    width: 35em;
+    height: 30%;
     display: flex;
     flex-direction: column ;
 }
@@ -33,11 +37,10 @@ p {
 
 
 h1{
-    font-family: 'Abril Fatface', serif;
-    background-color: rgb(203, 230, 203);
-    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
-    border-radius: 50px;
-    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(214, 213, 213);
+    box-shadow: 3px 1px 20px 3px rgb(90, 90, 90);
+    padding: 0.5em 3em;
 }
 
 
@@ -45,47 +48,62 @@ h1{
 /* Partie Taches réalisées  */ 
 
 #added-list{
-    height: 600px;
+    width: 100%;
+    height: 30em;
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
     background-color: rgb(252, 252, 252);
-    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
-}
-
-
-
-
-.list{
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    display: flex;
-    height: 50px;
-    margin: 3px;
-    margin-right: 50px;    
-}
-
-button{
-    width: 50px;
-    height: 50px;
-    
+    box-shadow: 3px 1px 20px 3px rgb(90, 90, 90);
 }
 
 ul{
+    width: 100%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-     
+    
 }
 
 
 
-.list p {
-    width: 550px;
-    height: 20px;
+li{
+    width: 97%;
+    height: 40px;
     display: flex;
-   
+    margin-top: 10px;
 }
+
+
+li p {
+    width: 100%;  
+}
+
+
+.done{
+    width: 40px;
+    background-color: rgb(11, 167, 11);
+    padding: 3px ;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    text-align: center;
+}
+
+.delete{
+    width: 40px;
+    background-color: rgb(245, 83, 83);
+    padding: 3px ;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    text-align: center;
+    margin-left: 3px;
+ 
+}
+
 
 
 /* style qui s'applique quand on clique sur la tache validée */
@@ -104,35 +122,30 @@ ul{
 
 #new-task{
     margin-top: 15px;
-    background-color: rgb(203, 230, 203);
-    box-shadow: 3px 1px 20px 3px rgb(18, 17, 17);
-    height: 100px;
-    border-radius: 20px;
+    background-color: rgb(214, 213, 213);
+    box-shadow: 3px 1px 20px 3px rgb(90, 90, 90);
+    height: 8em;
 }
 
 
 form {
-    height: 25px;
     display: flex;
     flex-direction: row;
 }
 
-label{
-    width : 120px ;
-}
-
 
 #task{
-    width: 520px;
-    margin-left: 5px;
-    
+    background-color: rgb(252, 252, 252);
+    width: 95%;
+    margin-left: 7px;
+    border: none;    
 }
 
 #submit{
-    width: 95px;
-    margin-left: 3px;
-    margin-right: 5px;
-   
+    background-color: hsl(207, 100%, 68%);
+    border : solid hsl(207, 100%, 68%);
+    padding: 0.6em 5%;
+    margin-right: 7px;
 }
 
 

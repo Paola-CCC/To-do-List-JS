@@ -12,29 +12,42 @@ function creatNodes () {
     // On arrête l'évenement pas défaut de l'input sumbit
     let li = document.createElement('li');
     let para = document.createElement('p') ;
-    let btn1 = document.createElement('button') ;
-    let btn2 = document.createElement('button') ;
+
+    let divBtn1 = document.createElement('div') ;
+    let divBtn2 = document.createElement('div') ;
+
+   
+
+    let btn1Text = `<i class="fas fa-check" style="font-size:30px;color:white;"></i>`;
+    let btn1 = divBtn1.innerHTML = btn1Text;
+    let btn2Text = `<i class="far fa-trash-alt" style="font-size:30px;color:white;"></i>`;
+    let btn2 = divBtn2.innerHTML = btn2Text;
+    ;
+
 
     // Ajouter la class de chaque element
     li.classList.add('list') ;
     para.classList.add('notDone')
-    btn1.classList.add('done') ;
-    btn2.classList.add('delete') ;
 
+    divBtn1.classList.add('done') ;
+    divBtn2.classList.add('delete') ;
+
+   
     // Ajouter le texte
     para.textContent = inputValue.value ;
-    btn1.textContent = 'Fait' ;
-    btn2.textContent = 'Supp' ;
+  
 
     // Ajouter au DOM comme dernier enfant
     li.appendChild(para)
-    li.appendChild(btn1)
-    li.appendChild(btn2)
+    li.appendChild(divBtn1)
+    li.appendChild(divBtn2)
     zoneList.appendChild(li)
+
+
+
+
+
 }
-
-
-
 
 submit.addEventListener('click',(event)=>{
     event.preventDefault()
@@ -48,7 +61,6 @@ submit.addEventListener('click',(event)=>{
 
         }
     }
-
 
     // Fonction Pour modifier le style du paragraphe et de la boite qui contient le li.
     let buttonDone = document.querySelectorAll('.done');
